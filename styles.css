@@ -1,0 +1,260 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Layout Styles */
+.tm-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tm-site-header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.tm-site-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.tm-site-nav {
+    margin-top: 10px;
+}
+
+.tm-site-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.tm-site-nav ul li {
+    margin: 0 10px;
+}
+
+.tm-site-nav ul li a {
+    font-size: 1.2rem;
+}
+
+.tm-home-section,
+.tm-menu-section,
+.tm-about-section,
+.tm-contact-section {
+    padding: 50px 0;
+}
+
+.tm-menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tm-menu-item {
+    width: 300px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+}
+
+.tm-menu-item:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-10px); /* Animate upwards on hover */
+}
+
+.tm-menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.tm-menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tm-menu-item p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.tm-about-section,
+.tm-contact-section {
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.tm-site-footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center the text (if you want to use it as a link) */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get it to display as a block element */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 12px; /* Rounded corners */
+    transition-duration: 0.4s; /* 0.4 seconds transition effect */
+}
+
+button:hover {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: 2px solid #4CAF50; /* Green border */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.order-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-container h1 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.order-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.order-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.order-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .tm-site-nav ul {
+        flex-direction: column;
+    }
+
+    .tm-menu-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tm-site-name {
+        font-size: 2rem;
+    }
+
+    .tm-site-nav ul li {
+        margin: 10px 0;
+    }
+
+    .tm-menu-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .tm-menu-item p {
+        font-size: 1rem;
+    }
+}

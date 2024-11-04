@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Vysh Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="tm-site-header">
+    <div class="tm-site-name">Vysh Cafe</div>
+    <nav class="tm-site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li> <!-- Added login link -->
+        </ul>
+    </nav>
+</header>
+    <div class="order-container">
+        <h1>Your order is being processed</h1>
+        <form id="onlineOrderForm">
+            <p>Enter your address for delivery and proceed to payment:</p>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required aria-label="Address">
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('onlineOrderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your payment has been processed! Your order will be delivered soon.');
+            // Optionally, redirect to a confirmation page
+            // window.location.href = 'order-confirmation.html';
+        });
+    </script>
+</body>
+</html>

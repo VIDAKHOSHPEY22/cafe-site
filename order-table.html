@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order at Table - Vysh Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="tm-site-header">
+    <div class="tm-site-name">Vysh Cafe</div>
+    <nav class="tm-site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li> <!-- Added login link -->
+        </ul>
+    </nav>
+</header>
+    <div class="order-container">
+        <h1>Your order is being processed</h1>
+        <form id="orderTableForm">
+            <p>Enter your table number so that the waiter will deliver the orders to you:</p>
+            <label for="table-number">Table Number:</label>
+            <input type="text" id="table-number" name="table-number" required aria-label="Table Number">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('orderTableForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your order has been submitted! Thank you.');
+            // Optionally, redirect to a confirmation page
+            // window.location.href = 'order-confirmation.html';
+        });
+    </script>
+</body>
+</html>
